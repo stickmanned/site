@@ -17,6 +17,7 @@
     <p> 
         i am capybara
     </p>
+    <audio id="bg-audio" src="Capybara Song (Rock Version).mp3" preload="auto" autoplay loop></audio>
 
     <li>5 things I like to eat:</li>
     <li>1. grass</li>
@@ -51,6 +52,17 @@
         </iframe>
     </div>
 
+    <script>
+      // Try autoplay, then ensure play starts on first user interaction
+      document.addEventListener('DOMContentLoaded', () => {
+        const audio = document.getElementById('bg-audio');
+        const tryPlay = () => audio.play().catch(() => {});
+        tryPlay();
+        const enable = () => { tryPlay(); window.removeEventListener('click', enable); window.removeEventListener('touchstart', enable); };
+        window.addEventListener('click', enable, { once: true });
+        window.addEventListener('touchstart', enable, { once: true });
+      });
+    </script>
 </body>
 </html>
 
