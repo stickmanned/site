@@ -10,12 +10,12 @@ body {
     box-sizing: border-box;
     font-family: 'Comic Sans MS', 'Comic Sans', cursive, Helvetica, sans-serif;
     font-size: 2em;
-    background-color: rgba(0, 0, 0, 0.5); /* Translucent background */
-    background-image: url('img/hay back.png');
-    background-size: cover;
-    background-position: center center;
+    /* One stretched image with a subtle dark overlay */
+    background:
+      linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+      url('img/hay back.png') center center / cover no-repeat fixed;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: #fff;
     position: relative;
 }
 
