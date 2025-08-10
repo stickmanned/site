@@ -68,3 +68,11 @@ button {
     margin: 0.5rem auto;
 }
 
+/* Top-left return button that scrolls with content */
+.return-btn {
+    position: static;      /* no fixed positioning */
+    display: block;        /* ignore body text-align */
+    width: max-content;    /* shrink to fit text */
+    margin: 1rem;          /* top-left spacing */
+}
+
