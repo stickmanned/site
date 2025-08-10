@@ -32,10 +32,10 @@ p {
     padding-left: 0;
 }
 
-/* Responsive video embed (slightly larger) */
+/* Responsive video embed (30% smaller) */
 .video {
     position: relative;
-    width: min(90vw, 800px); /* increase this max to make it larger */
+    width: min(63vw, 800px); /* 30% smaller than min(90vw, 800px) */
     margin: 1rem auto;
     height: 0;
     padding-bottom: 56.25%; /* 16:9 */
