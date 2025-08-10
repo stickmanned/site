@@ -10,6 +10,7 @@ body {
     box-sizing: border-box;
     font-family: 'Comic Sans MS', 'Comic Sans', cursive, Helvetica, sans-serif;
     font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.5); /* Translucent background */
     background-image: url('img/hay back.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,18 +18,6 @@ body {
     text-align: center;
     color: rgb(255, 255, 255);
     position: relative;
-    /* Add a translucent overlay */
-}
-
-body::before {
-	content: "";
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh; /* Adjust alpha for desired translucency */
-	z-index: -1;
-	pointer-events: none;
 }
 
 h1 {
@@ -37,5 +26,10 @@ h1 {
 
 p {
 	text-align: center;
+}
+
+.no-bullets {
+    list-style-type: none;
+    padding-left: 0;
 }
 
