@@ -61,7 +61,7 @@ button {
 
 /* 404 image: smaller with rounded corners */
 .error-img {
-    width: min(60vw, 280px);
+    width: min(80vw, 500px);
     height: auto;
     border-radius: 24px;
     display: block;
