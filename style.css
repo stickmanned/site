@@ -32,3 +32,22 @@ p {
     padding-left: 0;
 }
 
+/* Responsive video embed (slightly larger) */
+.video {
+    position: relative;
+    width: min(90vw, 800px); /* increase this max to make it larger */
+    margin: 1rem auto;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 */
+    overflow: hidden;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
