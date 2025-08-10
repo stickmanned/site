@@ -9,11 +9,10 @@ body {
     width: 100vw;
     box-sizing: border-box;
     font-family: 'Comic Sans MS', 'Comic Sans', cursive, Helvetica, sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     background-color: rgba(0, 0, 0, 0.5); /* Translucent background */
     background-image: url('img/hay back.png');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
     color: rgb(255, 255, 255);
