@@ -17,7 +17,7 @@
     <p> 
         i am capybara
     </p>
-    <audio id="bg-audio" src="Capybara Song (Rock Version).mp3" preload="auto" autoplay loop></audio>
+    
 
     <li>5 things I like to eat:</li>
     <li>1. grass</li>
@@ -27,42 +27,11 @@
     <li>5. guinea pigs</li>
     </ul>
     <p> 
-        videos about my species:
+        videos about my species: <a href="videos.html">watch here</a>
     </p>
-
-    <div class="video">
-        <iframe
-            src="https://www.youtube-nocookie.com/embed/eTfJPWDWPig"
-            title="about my species"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-        </iframe>
-    </div>
-
-    <div class="video">
-        <iframe
-            src="https://www.youtube-nocookie.com/embed/g0S_Ce8vTac"
-            title="fun facts about capybaras"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-        </iframe>
-    </div>
-
-    <script>
-      // Try autoplay, then ensure play starts on first user interaction
-      document.addEventListener('DOMContentLoaded', () => {
-        const audio = document.getElementById('bg-audio');
-        const tryPlay = () => audio.play().catch(() => {});
-        tryPlay();
-        const enable = () => { tryPlay(); window.removeEventListener('click', enable); window.removeEventListener('touchstart', enable); };
-        window.addEventListener('click', enable, { once: true });
-        window.addEventListener('touchstart', enable, { once: true });
-      });
-    </script>
+<footer class="bottom">
+    <p>© 2025 Capy the Capybara, all rights reserved</p>
+</footer>
 </body>
 </html>
 
